@@ -14,46 +14,43 @@ data={
   "coffee": {
 	"examples" : [
 	  "i would like to have coffee",
+	  "i would like to have coffee with soy milk",
+	  "can you please get me a coffee with almond milk",
+	  "can you please get me a coffee",
+	  "i need a coffee with soy milk",
 	  "maybe coffee",
 	  "coffee it is!!!!",
 	  "what italian options do i have",
 	  "i want coffee",
 	  "can you please get me a coffee",
 	  "i love to have coffee",
-
 	  "i will go with coffee this time",
 	  "coffee",
 	  "need a coffee",
 	  "need to order a cup coffee",
 	  "can i get a coffee",
 	  "get me a coffee",
-
-	  "i will go with coffee this time",
-
 	  "get me a coffee please"
 
 	],
   },
   "cappuccino": {
 	"examples" : [
+	  "i would like to have cappuccino with soy milk",
 	  "i will go with cappuccino this time",
+	  "i like to go with cappuccino and soy milk",
+	  "i want cappuccino with almond milk",
+	  "i need a cappuccino with almond milk",
+	  "can you please get me a cappuucino with soy milk",
 	  "can you get me a cappuccino",
 	  "nothing can beat cappuccino",
 	  "i love to have cappuccino"
-	  "i want cappuccino",
 	  "cappuccino",
 	  "can you get me a cappuccino",
-
 	  "please get me a cappuccino",
 	  "can you please get me a cappuccino",
 	  "i like to have cappuccino",
 	  "need to order a cappuccino",
-	  "i want cappuccino",
-	  "please get me a cappuccino",
-	  "can you please get me a cappuccino",
-	  "i like to have cappuccino",
-	  "i want to have cappuccino",
-	  "cappuccino",
 	  "please can i have cappuccino",
 	  "i like to have cappuccino",
 	  "i want to have cappuccino"
@@ -102,6 +99,8 @@ data={
   }
 
 }
+
+
 is_confirmed = 0
 training_text = []
 
@@ -113,7 +112,7 @@ for label in data.keys():
 X_vector = vectorizer.fit_transform(training_text)
 
 
-pkl_file = open('classif_update_1.p', 'rb')
+pkl_file = open('classif_update_2.p', 'rb')
 clf  = pickle.load(pkl_file)
 
 
